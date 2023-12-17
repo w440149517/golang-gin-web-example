@@ -7,6 +7,9 @@ import (
 	"strings"
 )
 
+import _ "github.com/gin-gonic/gin"
+import _ "net/http"
+
 func main() {
 	fmt.Println("My favorite number is ", rand.Intn(10))
 	sayHello()
@@ -15,6 +18,7 @@ func main() {
 	fmt.Println("a=", a, "b=", b)
 
 	fmt.Println(8)
+
 }
 
 func sayHello() {
